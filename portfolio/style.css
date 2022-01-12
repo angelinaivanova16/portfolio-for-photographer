@@ -1,0 +1,97 @@
+@font-face {
+ font-family: Merriweather;
+  src: url("assets/fonts/Merriweather-Bold.ttf");
+}
+@font-face {
+ font-family: Inter-Regular;
+  src: url("assets/fonts/Inter-Regular.ttf");
+}
+@font-face {
+ font-family: Inter-Bold;
+  src: url("assets/fonts/Inter-Bold.ttf");
+}
+
+.container {
+ width: 1440px;
+ margin: 0 auto;
+ padding: 0 20px;
+}
+
+/* .............................................. header .............................................. */
+
+.h-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+ height: 90px;
+
+ background: url('./assets/img/bg.jpg');
+ background-repeat: no-repeat;
+ background-position: center 0;
+}
+
+.navig-and-lang {
+ display: flex;
+ justify-content: space-between;
+ align-content: center;
+}
+
+.logo {
+ margin-left: 20px;
+  background-image: url("assets/svg/Vector.svg");
+  width: 50px;
+  height: 40px;
+}
+
+.main-menu {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ list-style: none;
+}
+li {
+ padding: 0 30px 0 0;
+}
+
+.link {
+ text-decoration: none;
+ color: #FFFFFF;
+ font-family: Inter-Regular;
+ font-size: 20px;
+}
+
+.lang {
+ width: 70px;
+ padding-right: 20px;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+
+ font-family: Inter-Bold;
+ font-size: 20px;
+ color: #FFFFFF;
+}
+.english {
+ color: #BDAE82;
+ ;
+}
+
+/* .............................................. main .............................................. */
+
+
+.hero-container {
+ background-image: url('./assets/img/bg.jpg');
+ background-position: center -90px;
+ background-repeat: no-repeat;
+
+ height: 910px;
+}
+
+h1 {
+ font-family: Merriweather;
+ font-size: 60px;
+ color: #FFFFFF;
+}
