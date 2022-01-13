@@ -226,6 +226,7 @@ h1 {
 .portfolio {
  height: 1500px;
  background: black;
+
  display: flex;
  flex-direction: column;
  justify-content: space-between;
@@ -274,4 +275,34 @@ h1 {
 .card {
  width: 450px;
  height: 560px;
+}
+
+/* .............................................. video .............................................. */
+
+.video {
+ height: 945px;
+ background: black;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.video-player {
+ width: 1400px;
+ height: 705px;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.btn-video {
+ position: absolute;
+ background: transparent;
+ background-image: url('./assets/svg/play_hover.svg');
+ width: 129.86px;
+ height: 130px;
+ border: 0;
+ cursor: pointer;
 }
