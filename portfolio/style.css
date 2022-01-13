@@ -98,7 +98,6 @@ li {
 
 h1 {
  margin: 0;
- /* border: 1px solid green; */
  font-family: Merriweather;
  font-size: 60px;
  Line-height: 120px;
@@ -106,7 +105,6 @@ h1 {
 }
 
 .frame {
- /* border: 2px solid red; */
  width: 500px;
  height: 330px;
 
@@ -132,7 +130,6 @@ h1 {
 .frame-text {
  width: 470px;
  Line-height: 40px;
- /* border: 1px solid green; */
  font-family: Inter-Regular;
  font-size: 20px;
  color: #FFFFFF;
@@ -148,7 +145,6 @@ h1 {
  flex-direction: column;
  justify-content: space-between;
  align-items: center;
- /* padding-top: 100px; */
 }
 
 .section-title {
@@ -170,7 +166,6 @@ h1 {
 }
 
 .skills-items {
- /* border: 1px solid red; */
  display: flex;
  justify-content: space-between;
  flex-wrap: wrap;
@@ -180,7 +175,6 @@ h1 {
 }
 
 .skill-item {
- /* border: 1px solid green; */
  width: 320px;
  display: flex;
  flex-direction: column;
@@ -225,4 +219,59 @@ h1 {
  text-align: center;
  padding-top: 30px;
  color: #FFFFFF;
+}
+
+/* .............................................. portfolio .............................................. */
+
+.portfolio {
+ height: 1500px;
+ background: black;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.section-title-port {
+ margin: 0;
+ width: 181px;
+ margin-left: 237px;
+ padding: 0 20px 0 20px;
+ font-family: Merriweather;
+ font-size: 40px;
+ line-height: 80px;
+ background: black;
+ color: #BDAE82;
+}
+
+.btns {
+ width: 895px;
+ height: 55px;
+}
+.btn-transparent {
+ width: 220px;
+ height: 55px;
+ border: 1px solid #BDAE82;
+ background-color: transparent;
+ cursor: pointer;
+ font-family: inherit;
+
+ font-family: Inter-Regular;
+ font-size: 20px;
+ Line-height: 40px;
+ color: #BDAE82;
+}
+
+.cards {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 25px;
+
+ width: 1400px;
+ height: 1145px;
+}
+
+.card {
+ width: 450px;
+ height: 560px;
 }
