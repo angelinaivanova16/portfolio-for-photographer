@@ -306,3 +306,79 @@ h1 {
  border: 0;
  cursor: pointer;
 }
+
+/* .............................................. price .............................................. */
+
+.price {
+ height: 845px;
+ background: black;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.price-cards {
+ width: 1400px;
+ height: 505px;
+ margin-bottom: 100px;
+
+ display: flex;
+ justify-content: space-between;
+}
+
+.price-card {
+ width: 450px;
+ padding: 43px 0 43px 0;
+ border: 3px solid #BDAE82;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ gap: 40px;
+}
+
+.price-name {
+ font-family: Merriweather;
+ font-size: 28px;
+ line-height: 56px;
+ text-align: center;
+ color: #FFFFFF;
+}
+
+.price-dollars {
+ font-family: Merriweather;
+ font-size: 24px;
+ line-height: 48px;
+ text-align: center;
+ color: #BDAE82;
+}
+
+.price-description {
+ display: block;
+ font-family: Inter-Regular;
+ font-size: 18px;
+ line-height: 36px;
+ text-align: center;
+ color: #FFFFFF;
+}
+
+.without-btn {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ gap: 20px;
+}
+
+
+/* .............................................. contacts .............................................. */
+
+.contacts {
+ height: 700px;
+ background: url('./assets/img/bg.contacts.jpg');
+ background-size: auto 700px;
+ background-position: center center;
+}
