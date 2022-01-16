@@ -15,6 +15,11 @@ html {
  scroll-behavior: smooth;
 }
 
+body {
+  background: black;
+  margin: 0;
+}
+
 .container {
  width: 1440px;
  margin: 0 auto;
@@ -46,6 +51,11 @@ html {
   background-image: url("assets/svg/Vector.svg");
   width: 50px;
   height: 40px;
+  transition: 0.3s;
+}
+.logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }
 
 .main-menu {
@@ -54,9 +64,10 @@ html {
  justify-content: space-between;
  align-items: center;
  list-style: none;
+ margin-top: 20px;
 }
 li {
- padding: 0 30px 0 0;
+ padding: 0 31px 0 0;
 }
 
 .link {
@@ -395,7 +406,7 @@ h1 {
  height: 445px;
  display: flex;
  flex-direction: column;
- justify-content: space-around;
+ justify-content: space-between;
  padding: 60px 0 0 970px;
  /* gap: 40px; */
 }
@@ -407,9 +418,10 @@ h1 {
  /* padding-left: 20px; */
  font-family: Merriweather;
  font-size: 40px;
- line-height: 80px;
+ line-height: 56px;
  color: #BDAE82;
- padding-bottom: 40px;
+ padding-bottom: 25px;
+ padding-top: 10px;
 }
 
 .form-contact-me {
@@ -436,12 +448,12 @@ input:-webkit-autofill:active {
 }
 
 .form-inp {
- height: 40px;
+ height: 44px;
  border: 2px solid #BDAE82 ;
  background: transparent;
 }
 .form-ta {
- height: 100px;
+ height: 95px;
  border: 2px solid #BDAE82 ;
  background: transparent;
 }
