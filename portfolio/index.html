@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" href="assets/svg/favicon.svg">
  </head>
  <body>
   <header>
@@ -41,7 +41,7 @@
           <button name="button" class="btn">Hire me</button>
         </div>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="wrapper">
           <h2 class="section-title">Skills</h2>
         </div>
@@ -68,7 +68,7 @@
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="wrapper">
           <h2 class="section-title-port">Portfolio</h2>
         </div>
@@ -87,7 +87,7 @@
           <div class="card"><img src="assets/img/portfolio-img6.jpg" alt="portfolio-image-6"></div>
         </div>
       </section>
-      <section class="video">
+      <section class="video" id="video">
         <div class="wrapper">
           <h2 class="section-title">Video</h2>
         </div>
@@ -96,7 +96,7 @@
           <button name="button" class="btn-video"></button>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="price">
         <div class="wrapper">
           <h2 class="section-title">Price</h2>
         </div>
@@ -151,7 +151,7 @@
             </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="wrapper-contact-me">
           <h2 class="section-title-without-bg">Contact me</h2>
           <form action="#" class="form-contact-me">
@@ -169,19 +169,60 @@
       <div class="footer-data">
         <p>©</p>
         <p>2022</p>
-        <p style="padding-right: 12px;">github</p>
+        <p><a class="gh" href="https://github.com/angelinaivanova16">github</a></p>
       </div>
-      <div class="footer-rss">
-        <p>Rolling Scopes School</p>
+      <div>
+        <p><a class="footer-rss" href="https://rs.school/js-stage0/">Rolling Scopes School</a></p>
       </div>
-      <div class="social-list">
-        <img class="social-icon" src="assets/svg/inst.svg" alt="instagram-icon">
-        <img class="social-icon" src="assets/svg/fb.svg" alt="fb-icon">
-        <img class="social-icon" src="assets/svg/tw.svg" alt="tw-icon">
-        <img class="social-icon" src="assets/svg/printerest.svg" alt="printerest-icon">
+      <div>
+        <ul class="social-list">
+          <li><a class="social-icon" href="#"><img src="assets/svg/inst.svg" alt="instagram-icon"></a></li>
+          <li><a class="social-icon" href="#"><img src="assets/svg/fb.svg" alt="fb-icon"></a></li>
+          <li><a class="social-icon" href="#"><img src="assets/svg/tw.svg" alt="tw-icon"></a></li>
+          <li><a class="social-icon" href="#"><img src="assets/svg/printerest.svg" alt="printerest-icon"></a></li>
+        </ul>
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script>
+    console.log(`
+    Оценка: 110 баллов.
+1. Вёрстка валидная +10 (сервис https://validator.w3.org/)
+2. Вёрстка семантическая +20
+В коде странице присутствуют следующие элементы (указано минимальное количество, может быть больше):
+- <header>, <main>, <footer> +2
+- шесть элементов <section> (по количеству секций) +2
+- только один заголовок <h1> +2
+- пять заголовков <h2> (количество секций минус одна, у которой заголовок <h1>) +2
+- один элемент <nav> (панель навигации) +2
+- два списка ul > li > a (панель навигации, ссылки на соцсети) +2
+- десять кнопок <button> +2
+- два инпута: <input type="email"> и <input type="tel"> +2
+- один элемент <textarea> +2
+- три атрибута placeholder +2
+3. Вёрстка соответствует макету +48
+- блок <header> +6
+- секция hero +6
+- секция skills +6
+- секция portfolio +6
+- секция video +6
+- секция price +6
+- секция contacts +6
+- блок <footer> +6
+4. Требования к css + 12
+- для построения сетки используются флексы или гриды +2
+- при уменьшении масштаба страницы браузера вёрстка размещается по центру, а не сдвигается в сторону +2
+- фоновый цвет тянется на всю ширину страницы +2
+- иконки добавлены в формате .svg. SVG может быть добавлен любым способом. Обращаем внимание на формат, а не на способ добавления +2
+- изображения добавлены в формате .jpg +2
+- есть favicon +2
+5. Интерактивность, реализуемая через css +20
+- плавная прокрутка по якорям +5
+- ссылки в футере ведут на гитхаб автора проекта и на страницу курса https://rs.school/js-stage0/ +5
+- интерактивность включает в себя не только изменение внешнего вида курсора, например, при помощи свойства cursor: pointer, но и другие визуальные эффекты, например, изменение цвета фона или цвета шрифта. Если в макете указаны стили при наведении и клике, для элемента указываем эти стили. Если в макете стили не указаны, реализуете их по своему усмотрению, руководствуясь общим стилем макета +5
+- обязательное требование к интерактивности: плавное изменение внешнего вида элемента при наведении и клике не влияющее на соседние элементы +5
+Итого: 110 баллов.
+    `)
+  </script>
  </body>
 </html>

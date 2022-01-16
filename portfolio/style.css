@@ -11,6 +11,10 @@
   src: url("assets/fonts/Inter-Bold.ttf");
 }
 
+html {
+ scroll-behavior: smooth;
+}
+
 .container {
  width: 1440px;
  margin: 0 auto;
@@ -467,13 +471,16 @@ input:-webkit-autofill:active {
 
 .footer-rss {
  width: 211px;
- display: flex;
- justify-content: space-between;
+ padding-left: 40px;
+ 
+ /* display: flex; */
+ /* justify-content: space-between; */
  
  font-family: Inter-Regular;
  font-size: 20px;
  line-height: 50px;
  color: #FFFFFF;
+ text-decoration: none;
 }
 
 .social-list {
@@ -482,8 +489,25 @@ input:-webkit-autofill:active {
  display: flex;
  justify-content: space-between;
  align-items: center;
+ /* padding: 0; */
 }
 .social-icon {
  width: 32px;
  height: 32px;
+ /* background-image: url("assets/svg/inst.svg"); */
+}
+
+.gh {
+ padding-right: 15px;
+ font-family: Inter-Regular;
+ font-size: 20px;
+ line-height: 50px;
+ color: #FFFFFF;
+ text-decoration: none;
+}
+
+a:hover {
+ text-decoration: underline;
+ text-decoration-color: lightskyblue;
+ text-decoration-thickness: 3px;
 }
