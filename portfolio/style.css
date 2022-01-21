@@ -46,6 +46,10 @@ body {
  align-content: center;
 }
 
+.hamburger {
+ display: none;
+}
+
 .logo {
   margin-left: 20px;
   background-image: url("assets/svg/Vector.svg");
@@ -530,12 +534,13 @@ a:hover {
 
 
 @media screen and (max-width: 768px) {
-
  .h-container {
+  /* border: 1px solid red; */
   height: 90px;
   background-image: url('assets/img/bg-tablet.jpg');
   background-repeat: no-repeat;
   background-position: center 0;
+  overflow-x: hidden;
  }
 
 .container {
@@ -543,8 +548,93 @@ a:hover {
  margin: 0 auto;
  padding: 0 0;
 }
+.logo {
+ margin-left: 60px;
+}
+.lang {
+ width: 95px;
+}
+.navig-and-lang {
+ margin-right: 65px;
+ width: 160px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+nav {
+ overflow-x: hidden;
+ position: relative;
+}
+
+.close {
+ position:unset;
+}
+
 .main-menu {
- display: none;
+ position:absolute;
+ z-index: 1;
+ background-color: black;
+ height: 429px;
+ flex-direction: column;
+ align-items: flex-start;
+ right: -768px;
+ list-style: none;
+ margin-top: -50px;
+ padding: 50px 0 450px 60px;
+}
+.main-menu.open-menu {
+ width: 520px;
+ height: 1024;
+ right: 0;
+ transition: all 0.5s ease;
+ display: flex;
+}
+/* li {
+ padding: 0 31px 0 0;
+} */
+
+.link {
+ text-decoration: none;
+ color: #FFFFFF;
+ font-family: Inter-Regular;
+ font-size: 35px;
+ Line-height: 72.55px;
+}
+
+.hamburger {
+ display: block;
+ z-index: 2;
+}
+.hamburger .line{
+ width: 50px;
+ height:3px;
+ background-color: #FFFFFF;
+ display: block;
+ margin: 8px auto;
+ -webkit-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
+}
+.hamburger:hover{
+ cursor: pointer;
+}
+#hamburger-1.is-active .line:nth-child(2){
+ opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+ -webkit-transform: translateY(13px) rotate(45deg);
+ -ms-transform: translateY(13px) rotate(45deg);
+ -o-transform: translateY(13px) rotate(45deg);
+ transform: translateY(13px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+ -webkit-transform: translateY(-13px) rotate(-45deg);
+ -ms-transform: translateY(-13px) rotate(-45deg);
+ -o-transform: translateY(-13px) rotate(-45deg);
+ transform: translateY(-13px) rotate(-45deg);
 }
 
 .hero-container {
@@ -552,9 +642,52 @@ a:hover {
  background-position: center -90px;
  background-repeat: no-repeat;
 
- height: 590px;
- padding: 0 0 0 0;
+ height: 420px;
+ padding: 78px 318px 0px 60px;
 }
+
+h1 {
+ margin: 0;
+ font-family: Merriweather;
+ font-size: 32px;
+ Line-height: 64px;
+ color: #FFFFFF;
+}
+
+.frame {
+ height: 270px;
+}
+
+.btn {
+ width: 219px;
+ height: 54px;
+ border: 0;
+ background-color: #bdae82;
+ cursor: pointer;
+ font-family: inherit;
+
+ font-family: Inter-Regular;
+ font-size: 20px;
+ Line-height: 40px;
+ color: #000000;
+}
+
+.frame-text {
+ width: 390px;
+ Line-height: 24px;
+ font-family: Inter-Regular;
+ font-size: 20px;
+ color: #FFFFFF;
+ margin: 0px 0 40px 0;
+}
+
+
+
+
+
+
+
+
 .skills-items {
  width: 728px;
  height: 520px;

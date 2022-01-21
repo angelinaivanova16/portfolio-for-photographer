@@ -1,3 +1,10 @@
+$(document).ready(function () {
+ $(".hamburger").click(function () {
+   $(this).toggleClass("is-active");
+   $(".main-menu").toggleClass("open-menu");
+   $("nav").toggleClass("close");
+ });
+});
 console.log(`
     Оценка: 110 баллов.
 1. Вёрстка валидная +10 (сервис https://validator.w3.org/)
