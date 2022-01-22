@@ -4,6 +4,11 @@ $(document).ready(function () {
    $(".main-menu").toggleClass("open-menu");
    $("nav").toggleClass("close");
  });
+ $(".link").click(function () {
+  $(".main-menu").removeClass("open-menu");
+  $("nav").toggleClass("close");
+  $(".hamburger").toggleClass("is-active");
+});
 });
 console.log(`
     Оценка: 110 баллов.
