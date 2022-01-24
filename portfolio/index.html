@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/svg/favicon.svg">
  </head>
@@ -27,7 +28,12 @@
         <div class="lang">
           <p class="english"> en</p>
           <p>/</p>
-          <p>ru</p>
+          <p class="ru">ru</p>
+        </div>
+        <div class="hamburger" id="hamburger-1">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
       </div>
     </div>
@@ -92,7 +98,7 @@
           <h2 class="section-title">Video</h2>
         </div>
         <div class="video-player">
-          <img src="assets/img/video-player.jpg" alt="video">
+          <img class="vp" src="assets/img/video-player.jpg" alt="video">
           <button name="button" class="btn-video"></button>
         </div>
       </section>
@@ -113,7 +119,7 @@
                 <span class="price-description">Make up, visage</span>
               </div>
             </div>
-            <div>
+            <div class="order">
               <button name="button" class="btn">Order shooting</button>
             </div>
           </div>
@@ -129,7 +135,7 @@
                   <span class="price-description">Make up, visage</span>
                 </div>
               </div>
-              <div>
+              <div class="order">
                 <button name="button" class="btn">Order shooting</button>
               </div>
             </div>
@@ -145,7 +151,7 @@
                   <span class="price-description">Make up, visage, hairstyle</span>
                 </div>
               </div>
-              <div>
+              <div class="order">
                 <button name="button" class="btn">Order shooting</button>
               </div>
             </div>
@@ -158,9 +164,8 @@
             <input class="form-inp" type="email" placeholder="E-mail">
             <input class="form-inp" type="tel" placeholder="Phone">
             <textarea class="form-ta" name="message" cols="20" rows="10" placeholder="Message"></textarea>
-            <!-- <input type="submit" value="Send message" class="btn"> -->
           </form>
-          <button class="btn">Send message</button>
+          <button class="btn down">Send message</button>
         </div>
       </section>
     </div>
