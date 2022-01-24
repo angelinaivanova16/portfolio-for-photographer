@@ -416,10 +416,8 @@ h1 {
 }
 
 .section-title-without-bg {
- /* border: 1px solid red; */
  margin: 0;
  width: 450px;
- /* padding-left: 20px; */
  font-family: Merriweather;
  font-size: 40px;
  line-height: 56px;
@@ -535,24 +533,27 @@ a:hover {
 
 @media screen and (max-width: 768px) {
  .h-container {
-  /* border: 1px solid red; */
   height: 90px;
   background-image: url('assets/img/bg-tablet.jpg');
   background-repeat: no-repeat;
   background-position: center 0;
   overflow-x: hidden;
  }
-
 .container {
  width: 768px;
  margin: 0 auto;
  padding: 0 0;
 }
+
+/* .............................................. @media header.............................................. */
+
+
 .logo {
  margin-left: 60px;
 }
 .lang {
  width: 95px;
+ padding-left: 4px;
 }
 .navig-and-lang {
  margin-right: 65px;
@@ -561,16 +562,13 @@ a:hover {
  justify-content: space-around;
  align-items: center;
 }
-
 nav {
  overflow-x: hidden;
  position: relative;
 }
-
 .close {
  position:unset;
 }
-
 .main-menu {
  position:absolute;
  z-index: 1;
@@ -590,10 +588,6 @@ nav {
  transition: all 0.5s ease;
  display: flex;
 }
-/* li {
- padding: 0 31px 0 0;
-} */
-
 .link {
  text-decoration: none;
  color: #FFFFFF;
@@ -636,6 +630,11 @@ nav {
  -o-transform: translateY(-13px) rotate(-45deg);
  transform: translateY(-13px) rotate(-45deg);
 }
+
+
+/* .............................................. @media hero .............................................. */
+
+
 
 .hero-container {
  background-image: url('assets/img/bg-tablet.jpg');
@@ -681,29 +680,42 @@ h1 {
  margin: 0px 0 40px 0;
 }
 
+/* .............................................. @media skills.............................................. */
 
-
-
-
-
-
-
+.skills {
+  height: 729px;
+ }
 .skills-items {
- width: 728px;
+ width: 645px;
  height: 520px;
+ display: flex;
+ flex-wrap: wrap;
 }
+.skill-item {
+  width: 300px;
+  padding-bottom: 68px;
+}
+ .skill-text {
+  line-height: 22px;
+ }
+ .skill-name {
+  padding-top: 10px;
+ }
+
 .wrapper {
  width: 364px;
- margin-top: 100px;
- background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+ margin-top: 83px;
 }
 .section-title {
  width: 91px;
  margin-left: 117px;
- padding: 0 20px 0 20px;
  font-size: 32px;
- line-height: 40px;
+ line-height: 80px;
 }
+
+
+/* .............................................. @media portfolio.............................................. */
+
 .portfolio {
  height: 3870px;
 }
@@ -717,6 +729,16 @@ h1 {
 .btns {
  width: 445px;
  height: 115px;
+ padding-bottom: 5px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 5px;
+}
+.btn-transparent {
+ height: 53px;
+}
+.btn {
+ height: 53px;
 }
 .cards {
  width: 450px;
@@ -726,6 +748,9 @@ h1 {
  width: 450px;
  height: 560px;
 }
+
+/* .............................................. @media video .............................................. */
+
 .video {
  height: 628px;
 }
@@ -733,42 +758,47 @@ h1 {
 .video-player {
  width: 768px;
  height: 418px;
+ background-image: url('./assets/img/video-player-tablet.jpg');
+ bottom: -2px;
 }
 .vp {
- width: 768px;
- height: 418px;
+ display: none;
 }
 .btn-video {
  background-image: url('./assets/svg/btn-tablet.svg');
- background-repeat: no-repeat;
- width: 75px;
- height: 75px;
+ width: 64.62px;
+ height: 64.69px;
 }
+
+/* .............................................. @media price.............................................. */
+
 .price {
  height: 1905px;
 }
 .price-cards {
+ padding-top: 50px;
  width: 768px;
- height: 1750px;
+ height: 1650px;
  flex-direction: column;
  align-items: center;
+ margin-bottom: 80px;
 }
-
 
  
  .price-card {
-  width: 420px;
-  height: 505px;
-  padding: 0 0 0 0;
-  border: 3px solid #BDAE82;
- 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 40px;
+  width: 415px;
+  height: 500px;
+  padding: 0 0 0 0; 
+  gap: 0;
+ }
+ .order {
+  padding-bottom: 23px;
+ }
+ .price-name {
+  padding-top: 20px;
  }
 
+/* .............................................. @media contacts .............................................. */
 
  .contacts {
   height: 600px;
@@ -783,11 +813,67 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   padding: 60px 0 0 159px;
+  align-items: center;
  }
+ .section-title-without-bg {
+  width: auto;
+  font-size: 32px;
+  line-height: 64px;
+  padding: 3px 0 0 0;
+ }
+ .form-contact-me {
+  width: 450px;
+  padding: 10px 0 0 0;
+ }
+ .down {
+  margin-bottom: 15px;
+ }
+ ::placeholder {
+  font-family: Inter-Regular;
+  color: #bdae82;
+  font-size: 20px;
+  line-height: 40px;
+  padding-left: 16px;
+ }
+
+ /* .............................................. @media footer.............................................. */
+
 
  .foot {
   flex-direction: column;
+  justify-content: space-around;
   height: 190px;
+ }
+ .footer-data {
+  margin-top: 28px;
+  width: 182px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 10px;
+ }
+ .footer-data > p {
+  margin: 0;
+ }
+ .gh {
+  padding-right: 12px;
+  font-size: 20px;
+  line-height: 24px;
+ }
+ .footer-rss {
+  padding-left: 0;  
+  font-size: 20px;
+  line-height: 24px;
+ }
+ .social-list {
+  width: 188px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 22px;
+ }
+ .social-list > li {
+  padding: 0;
  }
  
 
