@@ -1,3 +1,4 @@
+// burger-menu
 $(document).ready(function () {
  $(".hamburger").click(function () {
    $(this).toggleClass("is-active");
@@ -10,6 +11,25 @@ $(document).ready(function () {
   $(".hamburger").toggleClass("is-active");
 });
 });
+
+// Portfolio
+const portfolioBtns = document.querySelector('.btns');
+const portfolioBtn = document.querySelector('.btn-transparent');
+const portfolioImages = document.querySelectorAll('.portfolio-image');
+
+portfolioBtns.addEventListener('click', changeImage)
+
+function changeImage(event) {
+  if(event.target.classList.contains('btn-transparent')) {
+    portfolioImages.forEach((img, index) => img.src = `./assets/img/${event.target.dataset.season}/${index + 1}.jpg`);    
+  }
+}
+
+
+
+
+
+
 console.log(`
     Оценка: 79 баллов.
     1. Вёрстка соответствует макету. Ширина экрана 768px +48
