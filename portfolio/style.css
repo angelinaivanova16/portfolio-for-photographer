@@ -95,11 +95,13 @@ li {
  Line-height: 50px;
  color: #FFFFFF;
 }
-.english {
- color: #BDAE82;
- ;
+.cur {
+  cursor: pointer;
 }
 
+.active-language {
+  color: #BDAE82;
+}
 /* .............................................. main .............................................. */
 
 
@@ -526,9 +528,7 @@ input:-webkit-autofill:active {
 }
 
 a:hover {
- text-decoration: underline;
- text-decoration-color: lightskyblue;
- text-decoration-thickness: 3px;
+ filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
 
