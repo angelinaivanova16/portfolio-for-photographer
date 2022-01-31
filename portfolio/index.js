@@ -28,19 +28,31 @@ function changeImage(event) {
 
 // active button illumination
 
-portfolioBtns.addEventListener('click', function(event) {
-	let target = event.target;
-  target.classList.add('active');
-});
+
+
+
+const changeClassActive = document.querySelectorAll('.btns button')
+changeClassActive.forEach(item =>{ 
+        item.addEventListener('click', () => {
+        changeClassActive.forEach(b => { b.classList.remove('active'); });
+        item.classList.add('active')
+    })
+})
+
+
+// portfolioBtns.addEventListener('click', function(event) {
+// 	let target = event.target; // где клик?
+//   target.classList.add('active');
+// });
 
 // portfolioBtns.addEventListener('click', changeClassActive)
 
-function changeClassActive(portfolioBtn) {
-   if(portfolioBtn = active) {
-    target.classList.remove('active');
-   }
-   target.classList.add('active');
-  }
+// function changeClassActive(portfolioBtn) {
+//    if(portfolioBtn = active) {
+//     target.classList.remove('active');
+//    }
+//    target.classList.add('active');
+//   }
 
 
 
