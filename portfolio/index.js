@@ -26,7 +26,21 @@ function changeImage(event) {
 }
 
 
+// active button illumination
 
+portfolioBtns.addEventListener('click', function(event) {
+	let target = event.target;
+  target.classList.add('active');
+});
+
+// portfolioBtns.addEventListener('click', changeClassActive)
+
+function changeClassActive(portfolioBtn) {
+   if(portfolioBtn = active) {
+    target.classList.remove('active');
+   }
+   target.classList.add('active');
+  }
 
 
 

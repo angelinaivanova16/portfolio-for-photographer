@@ -296,6 +296,11 @@ h1 {
  height: 560px;
 }
 
+.btn-transparent.active {
+  color: #000;
+  background-color: #bdae82;
+}
+
 /* .............................................. video .............................................. */
 
 .video {
