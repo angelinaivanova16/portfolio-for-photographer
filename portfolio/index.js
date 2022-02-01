@@ -126,7 +126,7 @@ langParent.addEventListener('click', changeLang)
 function changeLang(event) {
   if (event.target.dataset.language){
     getTranslate(event.target.dataset.language) 
-    langElements.forEach((el)=>{
+    langElements.forEach((el) => {
       if (el == event.target){
         el.classList.add('active-language')
       } else {
@@ -139,10 +139,45 @@ function changeLang(event) {
 function getTranslate(language) {
   const i18n = document.querySelectorAll("[data-i18n]")
   console.log(i18n)
-  i18n.forEach((el)=>{
+  i18n.forEach((el) => {
     el.innerHTML=i18nObj[language][el.dataset.i18n]
   })
 }
+
+
+
+// light theme
+const arr = [
+  ".for-theme",
+  ".skills",
+  ".portfolio",
+  ".video",
+  ".price",
+  ".skill-text",
+  ".skill-name",
+  ".section-title",
+  ".section-title-port",
+  ".price-name",
+  ".price-description"
+];
+
+const sun = document.querySelector('.theme');
+sun.addEventListener('click', changeTheme)
+
+function changeTheme() {
+  let elements
+  arr.forEach(cssClassName => {
+    elements = document.querySelectorAll(cssClassName)
+    elements.forEach(element => {
+      element.classList.toggle('light-theme')
+    })
+  })
+  const wraps = document.querySelectorAll('.wrapper');
+  wraps.forEach(el => {
+    el.classList.toggle('wrap-theme');
+  })
+}
+
 
 
 console.log(`

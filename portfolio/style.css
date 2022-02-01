@@ -62,6 +62,18 @@ body {
     contrast(87%);
 }
 
+.theme {
+  margin: 20px;
+  background-image: url("assets/svg/carbon_sun.svg");
+  width: 50px;
+  height: 40px;
+  transition: 0.3s;
+}
+.theme:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
 .main-menu {
  display: flex;
  flex-direction: row;
@@ -881,6 +893,17 @@ h1 {
   padding: 0;
  }
  
+}
 
+/* -----------------------------------------light theme--------------------------------------------------------------*/
+.light-theme {
+  background-color: #fff;
+  color: #BDAE82;
+}
 
+.light-theme:hover {
+  color: #000;
+}
+.wrap-theme {
+  background-image: linear-gradient(to top, white 38px, #bdae82 39px, #bdae82 41px, white 41px);
 }
