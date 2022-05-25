@@ -1,2 +1,3 @@
-# angelinaivanova16-JSFEPRESCHOOL
-Private repository for @angelinaivanova16
+Проект можно посмотреть здесь:
+
+https://angelinaivanova16.github.io/portfolio-for-photographer/portfolio/
